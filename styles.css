@@ -1,0 +1,167 @@
+/*Broadcast button in speaker submission page will clear the text fields in the area by reloading
+the page again, while the go back button redirects us to the index html form*/
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: #ffffff;
+    background-color: #ffcccc; 
+    font-family: 'Arial', sans-serif;
+    font-size: 16px; 
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(Heart.jpg);
+    background-size: cover; /* I adjusted the size image to cover the entire page */
+    background-position: center; 
+    background-repeat: no-repeat; /* I modified the background image from repeating */
+    
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #ff4d4d; 
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 8px rgba(0,0,0,0.2);
+    width: 60%;
+    padding: 30px;
+    margin: 30px 10% 35px 10%;
+    text-align: center;
+  }
+  
+  /* Love Field Section Styles */
+  .love-field {
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .love-objects {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .love-field h1 {
+    font-size: 36px; 
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive; 
+  }
+  
+  .love-field p {
+    margin-bottom: 40px;
+  }
+  
+  /* Speaker Button Styles */
+  .speaker-button { /* Multiple buttons share this style since they are uniformed */
+    background-color: #ff1a1a; /* (i.e go back, broadcast, and submit button) */
+    color: #ffffff;
+    padding: 15px 25px; 
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block;
+  }
+  
+  .speaker-button:hover {
+    background-color: #ff6666; 
+    color: #ffffff;
+  }
+  
+  /* Speaker Form Styles */
+  .speaker-form {
+    color: #F3EDC8;
+    background-color: #ff4d4d; 
+    border-radius: 12px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.2);
+    width: 80%;
+    padding: 30px;
+    margin: 20px 10% 20px 10%;
+    border: 2px solid #ffffff;
+  }
+  
+  .form-title {
+    font-size: 24px; 
+  }
+  
+  .form-description {
+    margin-bottom: 20px; 
+    font-style: italic;
+  }
+  
+  .form-row {
+    margin-bottom: 20px; 
+    position: relative;
+  }
+  
+  .form-row label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .form-row input[type='text'],
+  .form-row input[type='email'],
+  .form-row input[type='password'] {
+    width: calc(100% - 24px); 
+    padding: 10px; 
+    font-size: 16px;
+    border: 2px solid #ffb3b3; 
+    border-radius: 6px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .form-row textarea {
+    width: calc(100% - 24px); 
+    height: 100px; 
+    padding: 10px; 
+    font-size: 16px;
+    border: 2px solid #ffb3b3; 
+    border-radius: 6px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .form-row input[type='text']:focus,
+  .form-row input[type='email']:focus,
+  .form-row input[type='password']:focus,
+  .form-row textarea:focus {
+    outline: none;
+    border-color: #ff6666; 
+  }
+  
+  .form-row input[type='text']:hover,
+  .form-row input[type='email']:hover,
+  .form-row input[type='password']:hover,
+  .form-row textarea:hover {
+    border-color: #ff6666; 
+  }
+  
+  .form-row input[type='text']:invalid,
+  .form-row input[type='email']:invalid {
+    border: 2px solid #D55C5F;
+    color: #D55C5F;
+    box-shadow: none;
+    animation: shake 0.5s ease-in-out;
+  }
+  
+  /* Center button container */
+  .button-container {
+    text-align: center;
+  }
+  
+  
+  
+  
+  
